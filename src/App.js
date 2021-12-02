@@ -15,18 +15,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
+     
 
       </header>
 			<main className="App-main">
@@ -35,15 +24,17 @@ function App() {
 						{quote.text}
 					</div>
 					<div id="author">
-					{quote.author}
+					"{quote.author}"
 					</div>
 					<button id="new-quote" onClick={changeQuote}>
 						New Quote
 					</button>
-					<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" id="tweet-quote" data-text={`${quote.text},${quote.author}`}data-show-count="false">
-						{/* <button> */}
+					<a href={`https://twitter.com/intent/tweet?&text=${quote.text} + "${quote.author}"`}>
+						<button>
 							Tweet-Quote
-						{/* </button> */}
+						</button>
+				
+						
 					</a>
 
 				</div>
