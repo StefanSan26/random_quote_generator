@@ -16,6 +16,7 @@ function App() {
     <div className="App">
       <header className="App-header">
      
+			<h2>Random Quote Machine by Stefan Sanchez</h2>
 
       </header>
 			<main className="App-main">
@@ -28,9 +29,9 @@ function App() {
 					</div>
 					<button id="new-quote" onClick={changeQuote}>
 						New Quote
-					</button>
+					</button >
 					<a href={`https://twitter.com/intent/tweet?&text=${quote.text} + "${quote.author}"`}>
-						<button>
+						<button className="tweet-button">
 							Tweet-Quote
 						</button>
 				
